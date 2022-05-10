@@ -1,0 +1,104 @@
+header {
+    background-color: var(--title-color);
+    border-bottom: 1px solid #ececec;
+    .logo &{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+
+    }
+  }
+  .container.navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    &__web {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: var(--link-color);
+    }
+     &__studio {
+        color: #000;
+    }
+} 
+.menu {
+    display: flex;
+    align-items: center;
+    &__item{
+        margin-right: 50px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: relative;
+    }
+    &__link{
+        line-height: 1.14;
+        color: var(--main-color);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-weight: 500;
+        &::after{
+            color: var(--link-color);
+            opacity: 1;
+            &:active{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 4px;
+                background-color: var(--link-color);
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+            }
+        }
+        &:focus,
+        &:hover{
+            color: var(--link-color);
+        }
+}
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__item{
+        margin-right: 50px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+      }
+    &__link{
+        display: flex;
+        color: var(--text-color);
+        line-height: 1.14;
+        color: var(--main-color);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-weight: 500;
+        &:focus,
+        &:hover{
+        color: var(--link-color)
+    }
+    &__email-icon{
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    &__tel-icon{
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+  }
+}
